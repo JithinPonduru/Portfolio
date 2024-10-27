@@ -1,0 +1,46 @@
+.box {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 5px; */
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.5s ease-in; /* Smooth fade-in effect */
+}
+
+/* Down Arrow Styles */
+.downArrow {
+    display: block;
+    width: 46px;
+    height: 45px;
+    border-right: 8px solid #ffcd03;
+    border-bottom: 8px solid #84f8f6;;
+    transform: rotate(45deg);
+    animation: bounce 3s infinite;
+    margin: 5px 0;
+}
+
+/* Different delays for each arrow */
+.downArrow:nth-child(1) { animation-delay: 0.2s; }*
+/* Scroll Text */
+.scroll-text {
+    font-size: 1rem;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0) rotate(45deg); }
+    50% { transform: translateY(10px) rotate(45deg); }
+}
+
+/* Show the box when active */
+.box.active {
+    opacity: 1; /* Fully visible */
+}

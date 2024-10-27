@@ -1,0 +1,38 @@
+
+* {
+    cursor: none;
+}
+
+.cursor {
+    pointer-events: none;
+}
+
+.cursor__ball {
+    position: fixed;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+    z-index: 1000;
+}
+
+.cursor__ball circle {
+    fill: #f7f8fa;
+}
+
+/* Circle Background */
+.circle-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.5em; /* Adjust to control circle size */
+    height: 2.5em;
+    background-color: #4b5563; /* Set to gray */
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* Text inside circle */
+.circle-text {
+    position: relative;
+    color: white;
+}
