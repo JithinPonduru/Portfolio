@@ -10,7 +10,7 @@
       >
         <div className="flex flex-col md:flex-row justify-between items-center p-3 px-5 sm:px-10">
           <div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold font-Oxanium hoverable">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold font-Oxanium inline-block hoverable">
               JPP
             </h1>
           </div>

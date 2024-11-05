@@ -1,0 +1,86 @@
+:root {
+	--cards: 4;
+	--cardHeight: min(80vh, 600px); /* Card height responsive to viewport */
+	--cardTopPadding: 2em;
+	--cardMargin: 4vw;
+	--navbarHeight: 100px;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+
+#cards {
+	list-style: none;
+	padding-left: 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(var(--cards), var(--cardHeight));
+	gap: var(--cardMargin);
+	padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+	margin-bottom: var(--cardMargin);
+}
+
+.card {
+	position: sticky;
+	top: var(--navbarHeight);
+	padding-top: calc(var(--index) * var(--cardTopPadding));
+	width: 100%; /* Make card width full to avoid overflow */
+}
+
+.card-body {
+	box-sizing: border-box;
+	padding: 20px;
+	border-radius: 20px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+	height: var(--cardHeight);
+	width: 100%;
+	max-width: 95vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.5s;
+}
+
+#card1 { --index: 1; }
+#card2 { --index: 2; }
+#card3 { --index: 3; }
+#card4 { --index: 4; }
+
+#card1 .card-body { background-color: #52B2CF; }
+#card2 .card-body { background-color: #E5A36F; }
+#card3 .card-body { background-color: #9CADCE; }
+#card4 .card-body { background-color: #D4AFB9; }
+
+/* Media Queries */
+@media (max-width: 768px) {
+	:root {
+		--cardHeight: 70vh;
+		--cardTopPadding: 1em;
+		--cardMargin: 2vw;
+	}
+	
+	.card-body {
+		padding: 15px;
+		border-radius: 15px;
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+	}
+}
+
+@media (max-width: 480px) {
+	:root {
+		--cardHeight: 60vh;
+		--cardTopPadding: 0.5em;
+		--cardMargin: 1vw;
+	}
+	
+	.card-body {
+		padding: 10px;
+		border-radius: 10px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	}
+}

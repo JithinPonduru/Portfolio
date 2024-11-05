@@ -1,10 +1,10 @@
 import React from "react";
 
-function AfterName() {
+function Aboutme() {
   return (
     <div className="text-white p-10">
       <div>
-        <h1 className="text-4xl mb-2 underline underline-offset-8 decoration-2 hoverable">
+        <h1 className="inline-block text-4xl mb-2 underline underline-offset-8 decoration-2 hoverable">
           About Jithin
         </h1>
         <div className="flex mt-5">
@@ -26,9 +26,9 @@ function AfterName() {
 
       {/* Table for Educational Details */}
       <div className="mt-8">
-        <h2 className="text-3xl mb-5 underline underline-offset-8 decoration-2">
+        <h1 className="inline-block text-4xl mb-10 underline underline-offset-8 decoration-2 hoverable">
           Education
-        </h2>
+        </h1>
         <table className="w-full border-collapse border border-gray-500 text-left">
           <thead>
             <tr className="bg-white text-black">
@@ -66,4 +66,4 @@ function AfterName() {
   );
 }
 
-export default AfterName;
+export default Aboutme;

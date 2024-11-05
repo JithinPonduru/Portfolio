@@ -1,9 +1,11 @@
 import "./App.css";
 import NavBar from "./Components/NavBar";
 import Welcome from "./Components/Welcome";
-import AfterName from "./Components/AboutMe";
+import Aboutme from "./Components/AboutMe";
 import CustomCursor from "./Components/CustomCursor";
-import SkillsAndProjectPage from "./Components/SkilsAndProjectPage";
+import Skills from "./Components/Skills";
+import LandingPage from "./Components/LandingPage";
+import Project from "./Components/Project"; 
 import {
   Animator,
   ScrollContainer,
@@ -49,47 +51,23 @@ function App() {
       <NavBar bgColor={navBgColor} />
       <ScrollContainer>
         <ScrollPage>
-          <div
-            style={{
-              backgroundColor: "white",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              height: "100%",
-            }}
-          >
-            <span style={{ fontSize: "80px" }}>
-              <Animator animation={MoveIn(-1000, 0)}>Hello Guys 👋🏻</Animator>
-              <Animator animation={MoveIn(1000, 0)}>
-                Nice to meet you 🙋🏻
-              </Animator>
-              - I'm Jithin Ponduru -
-              <Animator animation={MoveOut(1000, 0)}>Scroll Down</Animator>
-              <Animator animation={MoveOut(-1000, 0)}>the Page</Animator>
-            </span>
-
-            <div class="field">
-              <div class="mouse"></div>
-            </div>
-          </div>
+          <LandingPage />
         </ScrollPage>
 
-        {/* Including Welcome, AfterName, and CustomCursor components */}
+
         <ScrollPage>
           <Animator className="w-[100vw]" animation={ZoomInScrollOut}>
             <Welcome />
           </Animator>
         </ScrollPage>
-        <ScrollPage>
-          <Animator className="w-[100vw]" animation={ZoomInScrollOut}>
-            <AfterName />
-          </Animator>
-        </ScrollPage>
-        <ScrollPage>
-          <Animator className="w-[100vw]" animation={FadeUpAnimation}>
-            <SkillsAndProjectPage />
-          </Animator>
-        </ScrollPage>
+
+
+
+        <Aboutme />
+        <Skills />
+
+        <Project />
+
       </ScrollContainer>
 
       <CustomCursor />
