@@ -26,6 +26,7 @@ import {
   ZoomIn,
   ZoomOut,
 } from "react-scroll-motion";
+import Footer from "./Footer";
 
 function LandingPage() {
   let ATscrollProgress = () => {
@@ -88,13 +89,14 @@ function LandingPage() {
         <Skills />
 
         <ScrollPage>
-          <Animator animation={ZoomInScrollOut}>
+          <Animator>
             <h1 className="text-white text-[130px] mb-2 underline underline-offset-8 decoration-2 flex justify-center items-center h-screen">
               Projects
             </h1>
           </Animator>
         </ScrollPage>
         <Project />
+        <Fo oter />
       </ScrollContainer>
 
       <CustomCursor />
