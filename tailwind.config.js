@@ -10,6 +10,7 @@ module.exports = {
         rubik: ["Rubik Wet Paint", 'system-ui'],
         Orbitron: ["Orbitron", "sans-serif"],
         Oxanium: ["Oxanium", "sans-serif"],
+        Roboto_Condensed: ["Roboto Condensed", "sans-serif"]
       },
     },
   },

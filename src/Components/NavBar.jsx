@@ -21,7 +21,7 @@
                 props.bgColor === "black" ? "after:bg-white" : "after:bg-black"
               } hoverable`}
             >
-              <a href="#projects" className="block py-1 font-Oxanium">
+              <a href="#Projects" className="block py-1 font-Oxanium">
                 Projects
               </a>
             </li>
@@ -30,7 +30,8 @@
                 props.bgColor === "black" ? "after:bg-white" : "after:bg-black"
               } hoverable`}
             >
-              <a href="#resume" className="block py-1 font-Oxanium">
+              
+              <a href="https://jithinresume.tiiny.site/" className="block py-1 font-Oxanium">
                 Resume
               </a>
             </li>

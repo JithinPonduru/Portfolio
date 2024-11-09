@@ -2,7 +2,7 @@ import React from "react";
 
 function Aboutme() {
   return (
-    <div className="text-white p-10">
+    <div id="academics" className="text-white p-10">
       <div>
         <h1 className="inline-block text-4xl mb-2 underline underline-offset-8 decoration-2 hoverable">
           About Jithin

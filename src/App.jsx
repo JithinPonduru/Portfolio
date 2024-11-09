@@ -1,78 +1,41 @@
 import "./App.css";
-import NavBar from "./Components/NavBar";
-import Welcome from "./Components/Welcome";
-import Aboutme from "./Components/AboutMe";
-import CustomCursor from "./Components/CustomCursor";
-import Skills from "./Components/Skills";
 import LandingPage from "./Components/LandingPage";
-import Project from "./Components/Project"; 
-import {
-  Animator,
-  ScrollContainer,
-  ScrollPage,
-  batch,
-  Fade,
-  FadeIn,
-  Move,
-  MoveIn,
-  MoveOut,
-  Sticky,
-  StickyIn,
-  ZoomIn,
-} from "react-scroll-motion";
-import { useState, useEffect } from "react";
+import ProjectsPages from "./Components/ProjectsPages";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 
 function App() {
-  const [navBgColor, setNavBgColor] = useState("transparent");
 
-  // Define animations
-  const ZoomInScrollOut = batch(StickyIn(), FadeIn());
-  const FadeUpAnimation = batch(Fade(), Move(), Sticky());
-
-  // Handle scroll for navbar background color
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const windowHeight = window.innerHeight;
-
-      if (scrollPosition >= windowHeight) {
-        setNavBgColor("black");
-      } else {
-        setNavBgColor("transparent");
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <LandingPage />,
+    },
+    {
+      path : "/Project1",
+      element :  <ProjectsPages index={0} /> ,
+      errorElement : <h1>404 Not Found</h1>
+    },
+    {
+      path : "/Project2",
+      element :  <ProjectsPages index = {1} /> ,
+      errorElement : <h1>404 Not Found</h1>
+    },
+    {
+      path : "/Project3",
+      element :  <ProjectsPages index = {2} /> ,
+      errorElement : <h1>404 Not Found</h1>
+    },
+    {
+      path : "/Project4",
+      element :  <ProjectsPages index = {3} /> ,
+      errorElement : <h1>404 Not Found</h1>
+    }
+  ]);
+  
   return (
-    <>
-      <NavBar bgColor={navBgColor} />
-      <ScrollContainer>
-        <ScrollPage>
-          <LandingPage />
-        </ScrollPage>
-
-
-        <ScrollPage>
-          <Animator className="w-[100vw]" animation={ZoomInScrollOut}>
-            <Welcome />
-          </Animator>
-        </ScrollPage>
-
-
-
-        <Aboutme />
-        <Skills />
-
-        <Project />
-
-      </ScrollContainer>
-
-      <CustomCursor />
-    </>
-  );
+    <RouterProvider router={router}/>
+  )
 }
 
 export default App;

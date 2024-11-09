@@ -26,19 +26,19 @@ function Welcome(props) {
           <div className="text-center">
             <div className="stylecontainer space-y-5 md:space-y-10">
               <h1
-                className="font-Orbitron text-7xl md:text-[130px]"
+                className="font-semibold text-7xl md:text-[130px]"
                 style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}
               >
                 WELCOME
               </h1>
               <h1
-                className="font-Orbitron text-7xl md:text-[130px]"
+                className="font-semibold text-7xl md:text-[130px]"
                 style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}
               >
                 TO MY
               </h1>
               <h1
-                className="font-Orbitron text-7xl md:text-[130px]"
+                className="font-semibold text-7xl md:text-[130px]"
                 style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}
               >
                 PORTFOLIO<div className="container"></div>
