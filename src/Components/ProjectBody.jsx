@@ -15,9 +15,8 @@ function ProjectBody({ index }) {
     usedTechnologies,
     TimeLine,
     PaperLink,
-  } = ProjectData[3];
+  } = ProjectData[index];
 
-  console.log("ProjectData[3]", ProjectData[3]);
   const ATscrollProgress = () => {
     const scrollProgress = document.getElementById("ATprogressbar");
     const progressValue = document.getElementById("progressValue");
