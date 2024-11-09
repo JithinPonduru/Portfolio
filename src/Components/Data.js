@@ -4,7 +4,7 @@ const ProjectData = [
       "Leveraging Machine Learning for Proactive Detection and Mitigation of Android RAT",
     description:
       "AI-powered detection of Android RATs: proactively securing mobile environments with advanced machine learning.",
-    image: "src/assets/images/UROP.png",
+    image: "/assets/images/UROP.png",
     endpoint: "/Project1",
     projectLink: "https://github.com/JithinPonduru/Android-RAT-Detection",
     detailedDescription:
@@ -64,7 +64,7 @@ const ProjectData = [
     title: "Tender System and Security using Blockchain",
     description:
       "TenderChain: a blockchain-based system ensuring secure, transparent, and efficient tender management.",
-    image: "src/assets/images/Tender1.jpg",
+    image: "/assets/images/Tender1.jpg",
     endpoint: "/Project2",
     projectLink: "https://github.com/JithinPonduru/TenderChain",
     detailedDescription:
@@ -122,7 +122,7 @@ const ProjectData = [
     title: "Smart Student Outpass System",
     description:
       "Smart Student OutPass System automates and secures student outpass requests with IoT integration and real-time monitoring.",
-    image: "src/assets/images/SSOS.jpg",
+    image: "/assets/images/SSOS.jpg",
     endpoint: "/Project3",
     projectLink: "https://github.com/JithinPonduru/Student-Outpass-System",
     detailedDescription:
@@ -178,7 +178,7 @@ const ProjectData = [
     title: "Bingo-25",
     description:
       "Bingo-25: An innovative solution for enhancing user engagement and interactive gameplay with real-time features.",
-    image: "src/assets/images/Bingo.png",
+    image: "/assets/images/Bingo.png",
     endpoint: "/Project4",
     projectLink: "https://github.com/JithinPonduru/Bingo_BackEnd",
     detailedDescription:
