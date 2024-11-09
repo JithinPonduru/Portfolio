@@ -96,7 +96,7 @@ function LandingPage() {
           </Animator>
         </ScrollPage>
         <Project />
-        <Fo oter />
+        <Footer />
       </ScrollContainer>
 
       <CustomCursor />

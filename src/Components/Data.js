@@ -116,6 +116,7 @@ const ProjectData = [
         Description: "Done with the Paper Writing",
       },
     ],
+    PaperLink:"https://tender-chain.vercel.app/"
   },
   {
     title: "Smart Student Outpass System",
@@ -213,6 +214,7 @@ const ProjectData = [
         Description: "Project Put to Live",
       },
     ],
+    PaperLink:"https://bingo-25.netlify.app/"
   },
 ];
 
