@@ -6,32 +6,31 @@ function Project() {
 
   const Projects = [
     {
-      title:
-        "Leveraging Machine Learning for Proactive Detection and Mitigation of Android RAT",
+      title: "Leveraging Machine Learning for Proactive Detection and Mitigation of Android RAT",
       description:
         "This project employs advanced machine learning techniques to detect and mitigate Android Remote Access Trojans (RATs) by analyzing network traffic for suspicious patterns. It uses ensemble learning and a robust data preprocessing approach to achieve high detection accuracy, ensuring early intervention against security threats.",
-      image: "src/assets/images/UROP.png",
+      image: "/assets/images/UROP.png",
       endpoint: "/Project1",
     },
     {
       title: "Tender System and Security using Blockchain",
       description:
         "This blockchain-powered system is designed to securely manage tender processes with a focus on transparency and immutability. By leveraging decentralized technology, it enables organizations to manage contracts and bids in a trustless environment, protecting data integrity and preventing tampering.",
-      image: "src/assets/images/Tender1.jpg",
+      image: "/assets/images/Tender1.jpg",
       endpoint: "/Project2",
     },
     {
       title: "Smart Student Outpass System",
       description:
         "An innovative IoT-enabled system for managing student outpasses, allowing students to request, track, and get approvals for outpasses digitally. This system simplifies administration with real-time tracking, automated notifications, and seamless user experience.",
-      image: "src/assets/images/SSOS.jpg",
+      image: "/assets/images/SSOS.jpg",
       endpoint: "/Project3",
     },
     {
       title: "Bingo-25",
       description:
         "A digital version of the classic Bingo game with a unique 5x5 grid layout. Bingo-25 offers an engaging and interactive experience for users, allowing single and multiplayer modes, bringing a modern twist to a beloved game.",
-      image: "src/assets/images/Bingo.png",
+      image: "/assets/images/Bingo.png",
       endpoint: "/Project4",
     },
   ];
